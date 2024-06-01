@@ -20,6 +20,7 @@ import UpdateJob from "./pages/UpdateJob";
 import ApplyJob from "./pages/ApplyJob";
 import PageNotFound from "./pages/PageNotFound";
 import { useState } from "react";
+import ChatBot from "./pages/Chatbot";
 
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -29,6 +30,7 @@ function App() {
       <ScrollTop />
       {/* Add a navigation bar here */}
       <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
+       <ChatBot />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
